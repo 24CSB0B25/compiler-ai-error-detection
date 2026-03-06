@@ -1,0 +1,6 @@
+token,type,label,line
+buffer_decl,buffer,1,5
+(,symbol,0,7
+include,identifier,0,2
+),symbol,0,7
+(,symbol,0,6
