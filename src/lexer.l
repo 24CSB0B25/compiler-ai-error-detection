@@ -8,6 +8,21 @@
 
 FILE *mlfile;
 
+/* function to send token to ML detector */
+void run_ml_detector(const char *token)
+{
+    char cmd[256];
+
+    /* skip symbols that break shell */
+    if(strcmp(token,"(")==0 || strcmp(token,")")==0 ||
+       strcmp(token,"{")==0 || strcmp(token,"}")==0 ||
+       strcmp(token,";")==0)
+        return;
+
+    sprintf(cmd,"python3 ../phase9/ml_token_detector.py \"%s\"",token);
+    system(cmd);
+}
+
 void log_token(const char *token,
                const char *type,
                int label,
@@ -17,6 +32,9 @@ void log_token(const char *token,
         fprintf(mlfile,"%s,%s,%d,%d\n",
                 token,type,label,line);
     }
+
+    /* Week-9 ML detection (does NOT affect dataset) */
+    run_ml_detector(token);
 }
 %}
 

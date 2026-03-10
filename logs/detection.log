@@ -1,0 +1,5 @@
+MALICIOUS TOKEN: gets
+SAFE TOKEN: printf
+MALICIOUS TOKEN: system
+MALICIOUS TOKEN: buffer
+SAFE TOKEN: strcpy
