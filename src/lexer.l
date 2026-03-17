@@ -19,7 +19,7 @@ void run_ml_detector(const char *token)
        strcmp(token,";")==0)
         return;
 
-    sprintf(cmd,"python3 ../phase9/ml_token_detector.py \"%s\"",token);
+    sprintf(cmd,"../venv/bin/python ../phase9/ml_token_detector.py \"%s\"",token);
     system(cmd);
 }
 
