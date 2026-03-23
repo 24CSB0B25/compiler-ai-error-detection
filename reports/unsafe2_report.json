@@ -1,0 +1,13 @@
+{
+    "file": "../datasets/unsafe/unsafe2.c",
+    "total_tokens": 7,
+    "threats": [
+        {
+            "token": "system",
+            "type": "Unknown",
+            "severity": "LOW"
+        }
+    ],
+    "security_score": 85,
+    "risk_level": "LOW"
+}

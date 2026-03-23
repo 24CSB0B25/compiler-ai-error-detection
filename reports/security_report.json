@@ -1,0 +1,10 @@
+{
+    "total_tokens": 3,
+    "threats": [
+        {
+            "token": "gets",
+            "type": "Unsafe Function",
+            "severity": "HIGH"
+        }
+    ]
+}

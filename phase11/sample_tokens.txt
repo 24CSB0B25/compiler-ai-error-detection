@@ -1,0 +1,5 @@
+gets
+printf
+system
+buffer
+strcpy
