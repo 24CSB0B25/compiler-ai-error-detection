@@ -1,0 +1,8 @@
+{
+    "files_analyzed": 2,
+    "average_score": 88.5,
+    "most_secure_file": "../datasets/unsafe/unsafe1.c",
+    "most_secure_score": 92,
+    "least_secure_file": "../datasets/unsafe/unsafe2.c",
+    "least_secure_score": 85
+}
